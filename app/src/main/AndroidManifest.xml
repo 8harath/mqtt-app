@@ -2,6 +2,15 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <!-- Essential Permissions -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -10,6 +19,56 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.MQTTAPP" />
+        android:theme="@style/Theme.MQTT_APP"
+        tools:targetApi="31">
+
+        <!-- Google Maps API Key -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="YOUR_MAPS_API_KEY" />
+
+        <!-- Main Activity -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:theme="@style/Theme.MQTT_APP">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Settings Activity -->
+        <activity
+            android:name=".SettingsActivity"
+            android:exported="false"
+            android:theme="@style/Theme.MQTT_APP" />
+
+        <!-- Emergency Active Activity -->
+        <activity
+            android:name=".EmergencyActiveActivity"
+            android:exported="false"
+            android:theme="@style/Theme.MQTT_APP.Emergency"
+            android:screenOrientation="portrait" />
+
+        <!-- Medical Profile Activity -->
+        <activity
+            android:name=".MedicalProfileActivity"
+            android:exported="false"
+            android:theme="@style/Theme.MQTT_APP" />
+
+        <!-- Incident Map Activity -->
+        <activity
+            android:name=".IncidentMapActivity"
+            android:exported="false"
+            android:theme="@style/Theme.MQTT_APP" />
+
+        <!-- MQTT Service -->
+        <service
+            android:name=".mqtt.MQTTService"
+            android:enabled="true"
+            android:exported="false" />
+
+    </application>
 
 </manifest>

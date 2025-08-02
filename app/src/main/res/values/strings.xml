@@ -1,3 +1,127 @@
 <resources>
-    <string name="app_name">MQTT-APP</string>
+    <string name="app_name">Car Crash Detection</string>
+    <string name="app_logo">App Logo</string>
+    <string name="connection_status">Connection Status</string>
+    
+    <!-- Main Activity -->
+    <string name="emergency_alert">EMERGENCY ALERT</string>
+    <string name="view_incidents">VIEW INCIDENTS</string>
+    <string name="publisher_mode">Publisher Mode</string>
+    <string name="subscriber_mode">Subscriber Mode</string>
+    <string name="medical_profile">Medical Profile</string>
+    <string name="tap_to_send_alert">Tap to send emergency alert</string>
+    <string name="connected_to_mqtt">Connected to MQTT Broker</string>
+    
+    <!-- Emergency Active -->
+    <string name="emergency_alert_sent">EMERGENCY ALERT SENT</string>
+    <string name="help_on_way">Help is on the way</string>
+    <string name="im_ok">I\'M OK</string>
+    <string name="cancel_alert">Cancel Alert</string>
+    <string name="location_sharing">Location sharing active</string>
+    <string name="message_broadcasting">Message broadcasting</string>
+    
+    <!-- Settings -->
+    <string name="settings">Settings</string>
+    <string name="mode_selection">Mode Selection</string>
+    <string name="publisher_mode_description">Send emergency alerts when in distress</string>
+    <string name="subscriber_mode_description">Receive and respond to emergency alerts</string>
+    <string name="mqtt_configuration">MQTT Configuration</string>
+    <string name="broker_url">Broker URL</string>
+    <string name="broker_port">Broker Port</string>
+    <string name="test_connection">Test Connection</string>
+    <string name="connection_successful">Connection Successful</string>
+    <string name="connection_failed">Connection Failed</string>
+    <string name="app_preferences">App Preferences</string>
+    <string name="notifications">Notifications</string>
+    <string name="data_retention">Data Retention</string>
+    <string name="clear_data">Clear All Data</string>
+    <string name="about">About</string>
+    <string name="version">Version 1.0</string>
+    <string name="academic_project">Academic Project</string>
+    
+    <!-- Medical Profile -->
+    <string name="medical_profile_title">Medical Profile</string>
+    <string name="personal_information">Personal Information</string>
+    <string name="age">Age</string>
+    <string name="blood_group">Blood Group</string>
+    <string name="medical_conditions">Medical Conditions</string>
+    <string name="allergies">Allergies</string>
+    <string name="medications">Current Medications</string>
+    <string name="emergency_contacts">Emergency Contacts</string>
+    <string name="save_profile">Save Profile</string>
+    <string name="profile_saved">Profile saved successfully</string>
+    
+    <!-- Incident Map -->
+    <string name="incident_map">Incident Map</string>
+    <string name="active_incidents">Active Incidents</string>
+    <string name="acknowledged_incidents">Acknowledged Incidents</string>
+    <string name="resolved_incidents">Resolved Incidents</string>
+    <string name="navigate_to_location">Navigate to Location</string>
+    <string name="acknowledge_response">Acknowledge Response</string>
+    <string name="mark_resolved">Mark as Resolved</string>
+    <string name="incident_details">Incident Details</string>
+    
+    <!-- Blood Groups -->
+    <string name="blood_group_a_positive">A+</string>
+    <string name="blood_group_a_negative">A-</string>
+    <string name="blood_group_b_positive">B+</string>
+    <string name="blood_group_b_negative">B-</string>
+    <string name="blood_group_ab_positive">AB+</string>
+    <string name="blood_group_ab_negative">AB-</string>
+    <string name="blood_group_o_positive">O+</string>
+    <string name="blood_group_o_negative">O-</string>
+    
+    <!-- Vehicle Types -->
+    <string name="vehicle_car">Car</string>
+    <string name="vehicle_motorcycle">Motorcycle</string>
+    <string name="vehicle_truck">Truck</string>
+    <string name="vehicle_bus">Bus</string>
+    
+    <!-- Status Messages -->
+    <string name="status_active">Active</string>
+    <string name="status_acknowledged">Acknowledged</string>
+    <string name="status_resolved">Resolved</string>
+    
+    <!-- Error Messages -->
+    <string name="error_mqtt_connection">Failed to connect to MQTT broker</string>
+    <string name="error_location_permission">Location permission required</string>
+    <string name="error_notification_permission">Notification permission recommended</string>
+    <string name="error_invalid_broker_url">Invalid broker URL</string>
+    <string name="error_invalid_port">Invalid port number</string>
+    
+    <!-- Success Messages -->
+    <string name="success_emergency_sent">Emergency alert sent successfully</string>
+    <string name="success_incident_acknowledged">Incident acknowledged</string>
+    <string name="success_incident_resolved">Incident marked as resolved</string>
+    <string name="success_profile_updated">Profile updated successfully</string>
+    
+    <!-- Confirmation Dialogs -->
+    <string name="confirm_emergency">Are you sure you want to send an emergency alert?</string>
+    <string name="confirm_cancel_alert">Are you sure you want to cancel the emergency alert?</string>
+    <string name="confirm_clear_data">This will permanently delete all app data. Continue?</string>
+    <string name="confirm_mode_switch">Switching modes requires app restart. Continue?</string>
+    
+    <!-- Buttons -->
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="save">Save</string>
+    <string name="edit">Edit</string>
+    <string name="delete">Delete</string>
+    <string name="close">Close</string>
+    
+    <!-- Placeholders -->
+    <string name="hint_broker_url">Enter broker URL</string>
+    <string name="hint_broker_port">Enter port number</string>
+    <string name="hint_age">Enter age</string>
+    <string name="hint_emergency_contact_name">Contact name</string>
+    <string name="hint_emergency_contact_phone">Phone number</string>
+    <string name="hint_emergency_contact_relationship">Relationship</string>
+    
+    <!-- Accessibility -->
+    <string name="content_description_emergency_button">Emergency alert button</string>
+    <string name="content_description_settings_button">Settings button</string>
+    <string name="content_description_profile_button">Medical profile button</string>
+    <string name="content_description_connection_status">Connection status indicator</string>
 </resources>
